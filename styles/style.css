@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #36100a;
+  box-sizing: border-box;
+}
+
+section {
+  position: relative;
+  padding-bottom: 10rem;
+}
+
+h1,
+h2,
+.logo a {
+  font-family: "Marck Script", cursive;
+}
+
+h1 {
+  font-size: 4rem;
+  text-shadow: 3px 4px 5px #a47964;
+  animation-name: fadeIn;
+  animation-duration: 4s;
+}
+
+h2 {
+  font-size: 3rem;
+  padding: 5rem 0 3rem;
+  text-shadow: 2px 2px 7px #a47964;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+img {
+  border-radius: 50%;
+  height: 15rem;
+  margin: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.primary-background {
+  background-color: #f3e6e3;
+}
+
+.secondary-background {
+  background-color: #b9a59b;
+}
+
+.image-background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.btn {
+  box-shadow: 3px 4px 9px #a47964;
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 3px 6px 9px #a47964;
+}
+
+.btn:active {
+  transform: translateY(4px);
+  box-shadow: 3px 2px 9px #a47964;
+}
+
+/*====================
+NAVIGATION
+======================*/
+nav {
+  background-color: #f0cec0d4;
+  position: fixed;
+  width: 100vw;
+  z-index: 9999;
+}
+
+nav li {
+  display: inline-block;
+  width: 15rem;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  color: #2c0503;
+  text-shadow: 1px 1px 2px #a47964;
+}
+
+.logo {
+  font-weight: bolder;
+}
+
+/*====================
+INTRO
+======================*/
+#intro {
+  min-height: 95vh;
+  background-image: url("../assets/jess-bailey-q10VITrVYUM-unsplash.jpg");
+  /*Photo by @jessbaileydesigns found on unsplash.com */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*====================
+PROJECTS
+======================*/
+.project {
+  width: 40rem;
+  margin: 3rem auto;
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  background-color: #ffffffad;
+  font-size: 1.5rem;
+}
+.project:hover {
+  background-color: #ffffffe8;
+}
+
+.project_image {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin: 0 1rem 0 0;
+}
+
+.project_title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+/*====================
+ABOUT
+======================*/
+#about p {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+/*====================
+CONTACT
+======================*/
+#contact {
+  background-image: url("../assets/alvaro-serrano-hjwKMkehBco-unsplash.jpg");
+  /*Photo by @alvaroserrano found on unsplash.com*/
+}
+
+.contact-form {
+  background-color: #0000007d;
+  padding: 3rem 0;
+  width: 50rem;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 1.5rem;
+  display: block;
+  width: 40rem;
+  padding: 1.5rem;
+  margin: 2.5rem auto;
+  text-align: left;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline-color: transparent;
+}
+
+.contact-form textarea {
+  height: 15rem;
+}
+
+.contact-form button {
+  font-size: 1.5rem;
+  background-color: #f3e6e3;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 1.5rem 1.75rem;
+  text-transform: uppercase;
+}
+
+.contact-form button:hover {
+  background-color: #e7d1cc;
+}
+
+/*====================
+ANIMATIONS
+======================*/
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*====================
+MEDIA QUERIES
+======================*/
+@media only screen and (max-width: 970px) {
+  nav {
+    display: none;
+  }
+
+  .container-flex {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 35rem;
+  }
+
+  .contact-form {
+    width: 35rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 25rem;
+  }
+}

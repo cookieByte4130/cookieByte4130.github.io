@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <script defer src="scripts/script.js"></script>
+    <title>Amalia's Porfolio</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="container-flex">
+        <li class="logo"><a href="#">Amalia Bryant</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+    <section id="intro">
+      <div class="container-centered">
+        <h1>Let's Create<br />Something!</h1>
+      </div>
+    </section>
+    <section id="projects" class="secondary-background">
+      <h2>Projects</h2>
+
+      <div class="project btn">
+        <a target="_blank" href="https://cookiebyte4130.github.io/DWv01/">
+          <img
+            src="https://i.pinimg.com/originals/8a/52/cd/8a52cd8b7355d3bf64679eaaa064e080.jpg"
+            class="project_image"
+          />
+          <p class="project_title">Dragon Worlds</p>
+          <p class="project_summary">
+            A single player DnD style client side app where you will battle to
+            collect all the runes and reunite the land
+          </p>
+        </a>
+      </div>
+
+      <div class="project btn">
+        <a target="_blank" href="projects/MMC/index.html">
+          <img src="assets/mmcLogo.png" class="project_image" />
+          <p class="project_title">Mary's Mercy Center</p>
+          <p class="project_summary">
+            An informational page for an NPO that assists people currently
+            experiencing homelessness in San Bernardino, CA.
+          </p>
+        </a>
+      </div>
+
+      <div class="project btn">
+        <a target="_blank" href="projects/PopQuiz/index.html">
+          <img src="assets/popQuiz.jpeg" class="project_image" />
+          <p class="project_title">Pop Quiz</p>
+          <p class="project_summary">
+            A quick game app. Players have 20 seconds to answer as many
+            questions as they can.
+          </p>
+        </a>
+      </div>
+    </section>
+    <section id="about" class="primary-background">
+      <h2>About</h2>
+      <img src="assets/professionalPic.jpg" alt="Picture of Amalia" />
+      <p>
+        Graduated magna cum laude from Palo Verde College with an AS Degree in
+        Business Management. Completed The Last Mile's Frontend Web Development
+        coding bootcamp. Earned Office Services and Related Technologies as well
+        as Microsoft Office Word, Excel and PowerPoint certifications.
+      </p>
+      <p>
+        Dedicated to creating a better world by participating in several
+        organizations. Co-Facilitated several Alternative to Violence workshops.
+        Participated in Canine Support Teams in training dogs for disabled.
+        Donated several original art pieces to various organizations that assist
+        victims of Domestic Violence.
+      </p>
+    </section>
+    <section id="contact" class="image-background">
+      <h2>Contact Me</h2>
+      <div class="contact-form">
+        <input type="text" name="name" id="name" placeholder="Your name" />
+        <textarea id="message" placeholder="Write your message here"></textarea>
+        <button class="btn contactBtn">Submit</button>
+      </div>
+    </section>
+  </body>
+</html>
