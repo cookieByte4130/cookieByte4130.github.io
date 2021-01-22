@@ -5,6 +5,7 @@
   text-align: center;
   color: #36100a;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 section {
