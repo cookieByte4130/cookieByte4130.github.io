@@ -132,6 +132,7 @@ PROJECTS
 ======================*/
 .project {
   width: 40rem;
+  max-width: 60%;
   margin: 3rem auto;
   padding: 1.5rem 1rem;
   border-radius: 8px;
@@ -176,6 +177,7 @@ CONTACT
   background-color: #0000007d;
   padding: 3rem 0;
   width: 50rem;
+  max-width: 75%;
   margin: 0 auto;
 }
 
@@ -183,7 +185,7 @@ CONTACT
 .contact-form textarea {
   font-size: 1.5rem;
   display: block;
-  width: 40rem;
+  width: 50%;
   padding: 1.5rem;
   margin: 2.5rem auto;
   text-align: left;
@@ -234,18 +236,5 @@ MEDIA QUERIES
 
   .container-flex {
     flex-direction: column;
-  }
-
-  .project {
-    width: 35rem;
-  }
-
-  .contact-form {
-    width: 35rem;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    width: 25rem;
   }
 }
