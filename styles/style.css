@@ -156,16 +156,30 @@ PROJECTS
 }
 
 .project_image {
-  float: left;
   height: 150px;
   width: 150px;
-  margin: 0 1rem 0 0;
+  margin: 1rem auto;
 }
 
 .project_title {
   font-size: 1.75rem;
   font-weight: bold;
   padding-bottom: 1.5rem;
+}
+
+.project a {
+  display: flex;
+  flex-flow: row;
+}
+
+@media (max-width: 500px) {
+  .project a {
+    flex-flow: column;
+  }
+
+  .project_summary {
+    display: none;
+  }
 }
 
 /*====================
@@ -243,6 +257,8 @@ ANIMATIONS
 /*====================
 MEDIA QUERIES
 ======================*/
+
+/* TTD: Create collapsed menu for mobile */
 @media only screen and (max-width: 970px) {
   nav {
     display: none;
