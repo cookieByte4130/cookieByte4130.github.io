@@ -88,6 +88,18 @@ a {
   box-shadow: 3px 2px 9px #a47964;
 }
 
+.link {
+  color: #36100a;
+  font-weight: bold;
+  border: 2px solid #36100a;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  box-shadow: 1px 2px 3px #a47964;
+}
+.link:hover {
+  box-shadow: 2px 4px 7px #a47964;
+}
+
 /*====================
 NAVIGATION
 ======================*/
@@ -155,6 +167,7 @@ PROJECTS
   font-weight: bold;
   padding-bottom: 1.5rem;
 }
+
 /*====================
 ABOUT
 ======================*/
@@ -164,6 +177,7 @@ ABOUT
   padding: 1.5rem 2rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
+  text-align: justify;
 }
 /*====================
 CONTACT
@@ -185,7 +199,7 @@ CONTACT
 .contact-form textarea {
   font-size: 1.5rem;
   display: block;
-  width: 50%;
+  width: 85%;
   padding: 1.5rem;
   margin: 2.5rem auto;
   text-align: left;
@@ -232,6 +246,11 @@ MEDIA QUERIES
 @media only screen and (max-width: 970px) {
   nav {
     display: none;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: small;
   }
 
   .container-flex {
